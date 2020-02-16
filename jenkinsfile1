@@ -1,0 +1,29 @@
+pipeline
+{
+agent any
+stages{
+	
+	stage (print 'cloning')
+		{steps{
+		sh 'echo cloning'
+		}
+		}
+		stage (print 'execute test cases')
+		
+		{
+		steps{
+		sh 'echo executing test cases'
+		}
+		}
+		stage (print 'build')
+		{
+		steps{
+		sh 'echo build'
+		}
+		}
+		
+	
+
+}
+
+}
